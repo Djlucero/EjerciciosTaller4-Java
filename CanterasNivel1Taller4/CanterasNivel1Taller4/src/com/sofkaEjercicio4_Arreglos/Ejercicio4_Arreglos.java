@@ -10,10 +10,10 @@ public class Ejercicio4_Arreglos {
 	
 	
 	    // TODO Auto-generated method stub
-	    Scanner leer=new Scanner(System.in);
+		Scanner leer=new Scanner(System.in);
 	    int matriz[][]=new int [4][5];
-	    for(int fila =0;fila<matriz.length;fila++){
-	        for(int columna=0;columna<matriz.length+1;columna++){
+	    for(int fila =0;fila<4;fila++){
+	        for(int columna=0;columna<5;columna++){
 	        	
 	        	matriz[0][0] = 1;
 	    		matriz[0][1] = 2;
@@ -41,33 +41,51 @@ public class Ejercicio4_Arreglos {
 	    
 	    
 	    
-	    for(int fila=0;fila<matriz.length;fila++){
-	        System.out.println();
-	        for(int columna=0;columna<matriz.length+1;columna++){
+	    for(int fila=0;fila<4;fila++){
+	    	System.out.println(" ");
+	        for(int columna=0;columna<5;columna++){
 	            System.out.print(matriz[fila][columna]+"\t");
 	            System.out.print(" ");
-	           
+	            
 	        }
 	    }
 	    
-	
+	    
+	    System.out.println(" ");
+	    for(int fila=0;fila<1;fila++){
+	    	System.out.println(" ");
+	        for(int columna=0;columna<5;columna++){
+	            System.out.print(matriz[fila][columna]+"\t");
+	           
+	        }
+	    }
 
-		   
-		 
-	    System.out.print(" ");
-	    System.out.print("\n ");
-	            for (int fila = 1; fila <1; fila++) {
-		            for (int columna =5; columna <1; columna--) {
-		                System.out.print(matriz [fila][columna]+"\t ");
-		            }
-		            System.out.println();
-		        }   
+	    for(int fila=1;fila<2;fila++){
+	    	System.out.println(" ");
+	        for(int columna=5-1;columna>=0;columna--){
+	            System.out.print(matriz[fila][columna]+"\t");
+	           
+	        }
+	    }
+	    for(int fila=2;fila<3;fila++){
+	    	System.out.println(" ");
+	        for(int columna=0;columna<5;columna++){
+	            System.out.print(matriz[fila][columna]+"\t");
+	           
+	        }
+	    }
+		
+	    for(int fila=3;fila<4;fila++){
+	    	System.out.println(" ");
+	        for(int columna=5-1;columna>=0;columna--){
+	            System.out.print(matriz[fila][columna]+"\t");
 	    
 	}
-
-	
-	    
+	    }
 	}
+	}
+	    
+	
 
 			
 	    
